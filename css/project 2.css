@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "lato", sans-serif;
+}
+
+body {
+  background: url("/images/background.jpg") no-repeat center;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+
+#open-btn {
+  position: absolute;
+  top: 70%;
+  left: 10%;
+  height: 60px;
+  width: 350px;
+  font-size: 2rem;
+  background: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 3px black;
+  transition: 0.5s;
+}
+#open-btn:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+#modal {
+  position: absolute;
+  background-color: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 100px;
+  font-size: 1.5rem;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  -webkit-animation-name: animateModal;
+          animation-name: animateModal;
+  -webkit-animation-duration: 0.4s;
+          animation-duration: 0.4s;
+}
+
+#close-btn {
+  font-size: 3rem;
+}
+#close-btn:hover {
+  color: #ff0000;
+  cursor: pointer;
+}
+
+#modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+@-webkit-keyframes animateModal {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 50%;
+    opacity: 1;
+  }
+}
+
+@keyframes animateModal {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 50%;
+    opacity: 1;
+  }
+}/*# sourceMappingURL=project 2.css.map */
